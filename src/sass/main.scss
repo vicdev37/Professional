@@ -1,0 +1,136 @@
+.main {
+	background: #F15A29;
+	// min-height: 900px;
+	min-height: 100vh;
+}
+header {
+	position: relative;
+}
+
+.logo {
+	max-width: 44px;
+	cursor: pointer;
+	padding-top: 15px;
+	margin-left: 8px;
+}
+
+.main-nav {
+	width: 100%;
+	display: flex;
+	position: fixed;
+	margin-left: 8px;
+	z-index: 1;
+}
+
+.main-nav__ul {
+	width: 93%;
+	display: flex;
+	position: relative;
+	top: 8px;
+	left: 0;
+	align-items: center;
+	color: #ffffff
+}
+
+// .logo {
+// 	position: absolute;
+// 	left: 0;
+// 	top: 0;
+// }
+
+.main-nav__li {
+	font-family: DINPro;
+	font-size: 11px;
+	line-height: 13px;
+	letter-spacing: 3.44143px;
+	text-transform: uppercase;
+	margin-left: 52px;
+}
+.righted {
+	margin-left: auto;
+
+}
+
+
+
+.main-content {
+	display: flex;
+	// justify-content: space-between;
+	margin-left: 216px;
+	padding-top: 250px;
+
+	
+}
+
+.main-title {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 50px;
+	color: #ffffff
+}
+
+.main-name {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 50px;
+	letter-spacing: 10.8333px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-top: 24px;
+}
+
+.main-content__left {
+	position: relative;
+	
+}
+.main-content__right {
+	position: absolute;
+	top: 50px;
+	right: 170px;
+	img {
+		max-width: 480px;
+		width: 100%;
+	}
+}
+
+.join {
+	width: 239px;
+	color: #FFFFFF;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.join:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.slider-dots {
+	// text-align: -webkit-right;
+	margin: auto 41px;
+	position: fixed;
+	top: 300px;
+	right: 0px;
+	// display: flex;
+	// justify-content: flex-end;
+	// flex-direction: column;
+}
+
+.dot {
+	cursor: pointer;
+	margin-top: 15px;
+	height: 8px;
+	width: 8px;
+	background-color: #ffffff;
+	mix-blend-mode: normal;
+	opacity: 0.4;
+	border-radius: 50%;
+	-webkit-transition: background-color 0.6s ease;
+	transition: background-color 0.6s ease;
+}
+
+.dot-active {
+	background-color: #ffffff;
+	opacity: 1;
+}

@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  // &:visited,
+  // &:hover,
+  // &:focus,
+  // &:active {
+  // 	text-decoration: none;
+  // 	color: inherit;
+  // }
+}
+
+li {
+  list-style-type: none;
+}
+
+// .container {
+//   max-width: 1400px;
+//   width: 100%;
+// }
+
+button {
+  cursor: pointer;
+  margin-top: 29px;
+  padding: 20px 29px;
+  background: transparent;
+  border-radius: 3px;
+  font-family: DINPro;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 4.38px;
+  text-transform: uppercase;
+}
+
