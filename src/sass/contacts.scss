@@ -1,0 +1,84 @@
+.contacts {
+  margin-top: 175px;
+  margin-bottom: 111px;
+}
+.contacts-wrapper {
+  margin-left: 187px;
+}
+.contacts-address {
+  font-family: DINPro;
+  font-size: 28px;
+  line-height: 48px;
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.contacts-worktime__wrapper {
+  margin-left: 104px;
+  margin-top: 73px;
+}
+
+.worktime-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.worktime-time {
+  font-family: DINPro;
+  font-size: 28px;
+  line-height: 50px;
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.swing {
+  margin-top: 38px;
+}
+
+.join-contacts {
+  margin-top: 36px;
+}
+
+.contacts-social__wrapper {
+  display: flex;
+  margin-top: 104px;
+}
+
+
+
+.social-instagram img {
+  vertical-align: middle;
+}
+
+
+.social-instagram span {
+  margin-left: 12px;
+}
+
+
+.social-map {
+  margin-left: 33px;
+}
+
+.social-map img {
+  vertical-align: middle;
+}
+
+.social-map span {
+  margin-left: 12px;
+}
+
+.social-instagram:hover,
+.social-map:hover {
+  color: #F15A29;
+}

@@ -47,6 +47,20 @@ header {
 .righted {
   margin-left: auto; }
 
+.main-nav__li::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: #ffffff;
+  margin-top: 4px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+
+.main-nav__li:hover:after {
+  width: 100%; }
+
 .main-content {
   display: -webkit-box;
   display: -webkit-flex;

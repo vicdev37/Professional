@@ -1,0 +1,101 @@
+footer {
+  background: #F15A29;
+  position: relative; }
+
+.club-form {
+  max-width: 319px;
+  padding-top: 145px;
+  padding-bottom: 153px;
+  margin-left: 211px; }
+
+.club-form__title {
+  font-family: DINPro;
+  font-size: 52px;
+  line-height: 65px;
+  letter-spacing: 8.4px;
+  text-transform: uppercase;
+  color: #FFFFFF; }
+
+.club-form__subtitle {
+  margin-top: 28px;
+  font-family: DINPro;
+  font-size: 22px;
+  line-height: 35px;
+  letter-spacing: 3.675px;
+  color: #FFFFFF; }
+
+form {
+  margin-top: 35px; }
+
+input {
+  display: block;
+  max-width: 318px;
+  padding: 25px 172px 18px 19px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-border-radius: 3px;
+          border-radius: 3px; }
+
+input:not(:first-child) {
+  margin-top: 9px; }
+
+input::-webkit-input-placeholder {
+  color: #FFFFFF;
+  opacity: 0.6;
+  font-family: DINPro;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 4.38px;
+  text-transform: uppercase;
+  mix-blend-mode: normal; }
+
+input::-moz-placeholder {
+  color: #FFFFFF;
+  opacity: 0.6;
+  font-family: DINPro;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 4.38px;
+  text-transform: uppercase;
+  mix-blend-mode: normal; }
+
+input::-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: 0.6;
+  font-family: DINPro;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 4.38px;
+  text-transform: uppercase;
+  mix-blend-mode: normal; }
+
+input::placeholder {
+  color: #FFFFFF;
+  opacity: 0.6;
+  font-family: DINPro;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 4.38px;
+  text-transform: uppercase;
+  mix-blend-mode: normal; }
+
+.join-form {
+  width: 100%; }
+
+.info {
+  margin-top: 32px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 21px;
+  color: #FFFFFF; }
+
+.footer-img {
+  height: 830px;
+  position: absolute;
+  top: 115px;
+  right: 109px; }
+
+.footer-img img {
+  height: 100%; }

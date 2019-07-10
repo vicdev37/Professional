@@ -48,7 +48,19 @@ header {
 }
 .righted {
 	margin-left: auto;
+}
 
+.main-nav__li::after {
+	content: '';
+	display: block;
+	width: 0%;
+	height: 1px;
+	background-color: #ffffff;
+	margin-top: 4px;
+	transition: 0.4s;
+}
+.main-nav__li:hover:after {
+	width: 100%;
 }
 
 

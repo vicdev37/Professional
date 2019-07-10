@@ -1,0 +1,100 @@
+.overlay {
+  // background: #F15A29;
+  position: fixed;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(241, 90, 41, 0.8);
+  z-index: 3;
+  
+}
+
+.popup {
+  position: fixed;
+  z-index: 4;
+  left: 50%;
+  top: 25%;
+  width: 318px;
+  // background: #F15A29;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.popup-form {
+  margin-top: -16px;
+}
+
+.popup-title {
+  margin-top: 10px;
+  font-family: DINPro;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 6.35px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+.popup-close {
+  position: absolute;
+  right: -17px;
+  top: -35px;
+  cursor: pointer;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 300;
+  }
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.more-splash {
+  -webkit-animation-name: splash;
+  animation-name: splash;
+  -webkit-animation-duration: 1.7s;
+  animation-duration: 1.7s;
+}
+
+@-webkit-keyframes splash {
+  from {
+    box-shadow: 0 0 10px #c78030;
+  }
+
+  to {
+    box-shadow: 0 0 60px #c78030;
+  }
+}
+
+@keyframes splash {
+  from {
+    box-shadow: 0 0 10px #c78030;
+  }
+
+  to {
+    box-shadow: 0 0 60px #c78030;
+  }
+}
