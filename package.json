@@ -23,7 +23,9 @@
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^6.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "fullpage.js": "^2.9.7"
+  },
   "description": "My second try to create our site",
   "repository": {
     "type": "git",

@@ -4,13 +4,13 @@ window.addEventListener('DOMContentLoaded', function () {
 // fullpage
 
 	$("#fullpage").fullpage({
-		// sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#C63D0F']
-		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+		// sectionsColor: ['#C63D0F', 'red', 'red', 'red', '#C63D0F'],
+		anchors: ['home', 'services', 'gallery', 'contacts', 'inClub'],
 		// menu: '#menu',
 		scrollBar: true,
 		// scrollOverflow: true
 		navigation: true,
-		loopBottom: true
+		// loopBottom: true
 	});
 
 // modal
@@ -34,6 +34,53 @@ window.addEventListener('DOMContentLoaded', function () {
 		});
 	});
 
+// menu 
+
+// let scrolled;
+// window.onscroll = function () {
+// 	scrolled = window.pageYOffset || document.documentElement.scrollTop;
+// 	if (scrolled > 400) {
+// 		$(".main-nav__ul").css({
+// 			"color": "black"
+// 		})
+// 	}
+// 	if (400 > scrolled) {
+// 		$(".main-nav__ul").css({
+// 			"color": "white"
+// 		});
+// 	}
+
+// };
+
+const navbar = document.querySelector('#menu'),
+	  section1 = document.getElementById('section1'),
+	  section2 = document.getElementById('section2'),
+	  section3 = document.getElementById('section3'),
+	  section4 = document.getElementById('section4'),
+	  section5 = document.getElementById('section5'),
+	  logo = document.querySelector('.logo'); 
+
+window.addEventListener('scroll', function () {
+	const lastPosition = window.scrollY
+	if (lastPosition > 700) {
+		navbar.classList.add('another');
+		
+		logo.classList.add('another-logo');
+
+
+	} else if (navbar.classList.contains('another')) {
+		navbar.classList.remove('another');
+		
+	} else {
+		navbar.classList.remove('another');
+		logo.classList.remove('another-logo');
+	}
+
+	if (window.pageYOffset > 2850) {
+		navbar.classList.remove('another');
+		logo.classList.remove('another-logo');
+	}
+})
 
 // services 
 

@@ -1,9 +1,11 @@
 .gallery {
-  margin-top: 119px;
+  margin-top: 25px;
+  // height: 100vh;
 }
 .fotorama {
   display: flex;
   justify-content: flex-end;
+  margin-top: 30px;
 }
 
 .fotorama .fotorama__arr--prev {

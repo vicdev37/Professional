@@ -1,5 +1,5 @@
 .gallery {
-  margin-top: 119px; }
+  margin-top: 25px; }
 
 .fotorama {
   display: -webkit-box;
@@ -9,7 +9,8 @@
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  margin-top: 30px; }
 
 .fotorama .fotorama__arr--prev {
   background: url(../img/prev.png) no-repeat;

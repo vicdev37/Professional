@@ -9,7 +9,8 @@ header {
   max-width: 44px;
   cursor: pointer;
   padding-top: 15px;
-  margin-left: 8px; }
+  margin-left: 8px;
+  z-index: 100; }
 
 .main-nav {
   width: 100%;
@@ -18,7 +19,6 @@ header {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  margin-left: 8px;
   z-index: 1; }
 
 .main-nav__ul {
@@ -60,6 +60,23 @@ header {
 
 .main-nav__li:hover:after {
   width: 100%; }
+
+.another li {
+  color: black; }
+
+.another li:after {
+  background-color: #F15A29; }
+
+.another-transparent {
+  background-color: transparent; }
+
+.logo-first {
+  background: url("../img/logo.png") center no-repeat;
+  width: 60px;
+  height: 60px; }
+
+.another-logo {
+  background: url("../img/logo_orange.png") center no-repeat; }
 
 .main-content {
   display: -webkit-box;
@@ -106,26 +123,5 @@ header {
 .join:hover {
   background: rgba(255, 255, 255, 0.1); }
 
-.slider-dots {
-  margin: auto 41px;
-  position: fixed;
-  top: 300px;
-  right: 0px; }
-
-.dot {
-  cursor: pointer;
-  margin-top: 15px;
-  height: 8px;
-  width: 8px;
-  background-color: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.4;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  -webkit-transition: background-color 0.6s ease;
-  -o-transition: background-color 0.6s ease;
-  transition: background-color 0.6s ease; }
-
-.dot-active {
-  background-color: #ffffff;
+#fullpage #fp-nav {
   opacity: 1; }
