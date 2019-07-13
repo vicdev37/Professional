@@ -1,0 +1,69 @@
+.gallery {
+  margin-top: 119px;
+}
+.fotorama {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fotorama .fotorama__arr--prev {
+  
+  background: url(../img/prev.png) no-repeat;
+  opacity: 0.6;
+  
+}
+
+.fotorama .fotorama__arr--next {
+
+  background: url(../img/next.png) no-repeat;
+  opacity: 0.6;
+
+}
+
+.fotorama .fotorama__arr--prev:hover,
+.fotorama .fotorama__arr--next:hover {
+  opacity: 1;
+}
+// .fotorama .fotorama__arr--next {
+//   content: '';
+//   display: block;
+//   width: 60px;
+//   height: 60px;
+//   border-radius: 50%;
+//   border: 1px solid black;
+  
+  
+// }
+// .fotorama .fotorama__arr--next:after {
+//   // background: url(../img/next.png) no-repeat;
+//   content: '';
+//   position: absolute;
+//   top: 50%;
+//   right: 26%;
+//   display: block;
+//   width: 34px;
+//   height: 1px;
+//   background-color: black;
+  
+// }
+
+// .fotorama .fotorama__arr--next:before {
+//   content: '';
+//   position: absolute;
+//   display: block;
+//   top: 24px;
+//   left: 25px;
+//   transform: rotate(32deg);
+//   width: 20px;
+//   height: 1px;
+//   background-color: black;
+// } 
+
+// .fotorama .fotorama__arr--next:hover {
+//   background-color: #F15A29;
+// }
+
+.fotorama .fotorama__thumb-border {
+  border-color: #F15A29;
+}
+

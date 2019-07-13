@@ -6,163 +6,218 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=cyrillic-ext" rel="stylesheet">
+	<link href="css/fotorama.css" type="text/css" rel="stylesheet">
+	<link href="css/fullpage.css" type="text/css" rel="stylesheet">
 	<title>Professional</title>
 </head>
 <body>
-	
-	<section class="main">
-		<div class="container">
-			<header>
-				<nav class="main-nav">
-					<div class="logo">
-						<a href="#logo"></a><img src="./img/logo.png" alt="logo">
-					</div>
-					<ul class="main-nav__ul">
-						<li class="main-nav__li"><a href="#servises">Услуги</a></li>
-						<li class="main-nav__li"><a href=" #gym">Тренажерный зал</a></li>
-						<li class="main-nav__li"><a href="#contacts">Контакты</a></li>
-						<li class="main-nav__li"><a href="#club">Вступить в клуб</a></li>
-						<li class="main-nav__li righted"><a href="#tel">8 800 655 35 35</a></li>
-					</ul>
-				</nav>
+<div id="fullpage">
+	<div class="section" id="section0">
+		<section class="main">
+			<div class="container">
+				<header>
+					<nav class="main-nav">
+						<div class="logo">
+							<a href="#logo"></a><img src="./img/logo.png" alt="logo">
+						</div>
+						<ul class="main-nav__ul" id="menu">
+							<li data-menuanchor="firstPage" class="main-nav__li"><a href="#firstPage">Услуги</a></li>
+							<li data-menuanchor="secondPage" class="main-nav__li"><a href="#secondPage">Тренажерный зал</a></li>
+							<li data-menuanchor="thirdPage" class="main-nav__li"><a href="#thirdPage">Контакты</a></li>
+							<li data-menuanchor="fourthPage" class="main-nav__li"><a href="#fourthPage">Вступить в клуб</a></li>
+							<li data-menuanchor="tel: 8 800 655 35 35" class="main-nav__li righted"><a href="tel: 8 800 655 35 35">8 800 655
+									35 35</a>
+							</li>
+						</ul>
+					</nav>
 
-				<div class="main-content">
-					<div class="main-content__left">
-						<div class="main-title">
-							Фитнес-центр
+					<div class="main-content">
+						<div class="main-content__left">
+							<div class="main-title">
+								Фитнес-центр
+							</div>
+							<div class="main-name">
+								Профессионал
+							</div>
+							<button class="btn join">Вступить в клуб</button>
 						</div>
-						<div class="main-name">
-							Профессионал
-						</div>
-						<button class="btn join">Вступить в клуб</button>
-					</div>
-					<div class="main-content__right">
+						<div class="main-content__right">
 							<img src="./img/woman.png" alt="women">
-					</div>
-				</div>
-
-				<div class="slider-dots">
-					<div class="dot dot-active"></div>
-					<div class="dot"></div>
-					<div class="dot"></div>
-					<div class="dot"></div>
-				</div>
-
-			</header>
-		</div>
-	</section>
-
-	<section class="services">
-		<div class="container">
-			<div class="services-wrapper">
-
-				<div class="services-left">
-					<div class="services-left__groups">
-
-						<div class="groups-title__up">Групповые</div>
-						<div class="groups-nav">
-							<ul class="groups-ul">
-								<li class="services-li"><a href="#body-pump">body pump</a></li>
-								<li class="services-li"><a href="#cxworx">cxworx</a></li>
-								<li class="services-li"><a href="#body-balance">body balance</a></li>
-								<li class="services-li"><a href="#rpm">rpm</a></li>
-							</ul>
-						</div>
-
-						<div class="gym-title__down">Зал</div>
-						<div class="gym-nav">
-							<ul class="gym-ul">
-								<li class="services-li"><a href="#trening">Персональный тренинг</a></li>
-								<li class="services-li"><a href="#power">Силовые тренажеры</a></li>
-								<li class="services-li"><a href="#kardiozone">Кардиозона</a></li>
-								<li class="services-li"><a href="#kinesis">Kinesis</a></li>
-								<li class="services-li"><a href="#flexability">Flexability</a></li>
-							</ul>
 						</div>
 					</div>
-				</div>
 
-				<div class="services-right">
-					<div class="item">
-						<div class="item-title">ТРЕНАЖЕРНЫЙ ЗАЛ <br> 1250 КВ. М </div>
-						<div class="item-subtitle">Большие пространства, высокие потолки, <br> удобное зонирование</div>
+					<div class="slider-dots">
+						<div class="dot dot-active"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
 					</div>
-					<div class="item">
-						<div class="item-title">ТРЕНАЖЕРЫ TECHNOGYM</div>
-						<div class="item-subtitle">Золотой стандарт в мире тренажеров, комплексная <br> кардио и силовая нагрузка</div>
+
+				</header>
+			</div>
+		</section>
+	</div>
+
+	<div class="section" id="section1">
+		<section class="services">
+			<div class="container">
+				<div class="services-wrapper">
+
+					<div class="services-left">
+						<div class="services-left__groups">
+
+							<div class="groups-title__up">Групповые</div>
+							<div class="groups-nav">
+								<ul class="groups-ul">
+									<li class="services-li"><a href="#body-pump">body pump</a></li>
+									<li class="services-li"><a href="#cxworx">cxworx</a></li>
+									<li class="services-li"><a href="#body-balance">body balance</a></li>
+									<li class="services-li"><a href="#rpm">rpm</a></li>
+								</ul>
+							</div>
+
+							<div class="gym-title__down">Зал</div>
+							<div class="gym-nav">
+								<ul class="gym-ul">
+									<li class="services-li"><a href="#trening">Персональный тренинг</a></li>
+									<li class="services-li"><a href="#power">Силовые тренажеры</a></li>
+									<li class="services-li"><a href="#kardiozone">Кардиозона</a></li>
+									<li class="services-li"><a href="#kinesis">Kinesis</a></li>
+									<li class="services-li"><a href="#flexability">Flexability</a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
-					<div class="item">
-						<div class="item-title">ТРЕНАЖЕРЫ HOIST</div>
-						<div class="item-subtitle">Безупречная биомеханика, естественная <br> траектория и амплитуда движения</div>
+
+					<div class="services-right">
+						<div class="main-items">
+							<div class="item">
+								<div class="item-title">ТРЕНАЖЕРНЫЙ ЗАЛ <br> 1250 КВ. М </div>
+								<div class="item-subtitle">Большие пространства, высокие потолки, <br> удобное зонирование
+								</div>
+							</div>
+							<div class="item">
+								<div class="item-title">ТРЕНАЖЕРЫ TECHNOGYM</div>
+								<div class="item-subtitle">Золотой стандарт в мире тренажеров, комплексная <br> кардио и
+									силовая нагрузка
+								</div>
+							</div>
+							<div class="item">
+								<div class="item-title">ТРЕНАЖЕРЫ HOIST</div>
+								<div class="item-subtitle">Безупречная биомеханика, естественная <br> траектория и амплитуда
+									движения</div>
+							</div>
+							<button class="btn join join-white">Вступить в клуб</button>
+							<button class="excursion">Экскурсия</button>
+						</div>
+						<div class="a-item__wrapper">
+							<div class="a-item power">
+								<div class="a-team__arrow">
+									<img src="./img/prev.png" alt="Image">
+								</div>
+								<div class="a-item__title">Силовые Тренажеры</div>
+								<p class="a-item__description">
+									«Профессионал» оснащен силовыми тренажерами от лидера мирового рынка - Tehnogym (Италия).
+									Это новое поколение
+									профессиональных тренажеров, разработанных на основе изучения требований и пожеланий к
+									оборудованию более 10
+									миллионов пользователей в различных странах мира. В основу разработки заложены простота
+									регулировки и
+									использования; естественная траектория движений, максимально приближенная к траектории
+									тренировки со свободным
+									весом; комфорт, надежность и безопасность конструкции при минимальных габаритах.
+								</p>
+								<button class="btn join join-white">Вступить в клуб</button>
+								<button class="excursion">Экскурсия</button>
+							</div>
+						</div>
 					</div>
-					<button class="btn join join-white">Вступить в клуб</button>
-					<button class="excursion">Экскурсия</button>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 
 
-	<section class="gallery">
-		<div class="container">
-			<h1>ЗДЕСЬ БУДЕТ СЛАЙДЕР</h1>
-		</div>
-		
-	</section>
-
-
-
-
-
-
-	<section class="contacts">
-		<div class="container">
-			<div class="contacts-wrapper">
-				<div class="contacts-address">Ростов-на-Дону, <br> ул. Суворова, 130</div>
-				<div class="contacts-worktime__wrapper">
-					<div class="worktime-title">С понедельника по пятницу:</div>
-					<div class="worktime-time">6:30 — 00:30</div>
-					<div class="worktime-title swing">В выходные и праздники:</div>
-					<div class="worktime-time">8:00 — 22:00</div>
-					<button class="btn join join-white join-contacts">Вступить в клуб</button>
+	<div class="section" id="section2">
+		<section class="gallery">
+			<div class="container">
+				<div id="fotorama" data-width="60%" data-nav="thumbs" data-thumbwidth="120" data-transition="slide"
+					data-loop="true" data-keyboard="true" data-arrows="true" data-autoplay="true" data-thumbmargin="30">
+					<img src="./img/1.jpg">
+					<img src="./img/2.jpg">
+					<img src="./img/3.jpg">
+					<img src="./img/1.jpg">
+					<img src="./img/2.jpg">
+					<img src="./img/3.jpg">
+					<img src="./img/1.jpg">
+					<img src="./img/2.jpg">
+					<img src="./img/3.jpg">
 				</div>
-				<div class="contacts-social__wrapper">
-					<div class="social-instagram">
-						<a href="#inst"><img src="./img/instagram.png" alt="Instagram"><span>Instagram</span></a>
-
-					</div>
-					<div class="social-map">
-						<a href="#inst"><img src="./img/map.png" alt="Map"><span>Проложить маршрут</span></a>
-
-					</div>
+				<div class="arrow-wrapper">
+					<div class="arrow-prev"></div>
+					<div class="arrow-next"></div>
 				</div>
 			</div>
-			
-		</div>
-	</section>
+		</section>
+	</div>
 
-	<footer>
-		<div class="container">
-			<div class="club-form">
-				<div class="club-form__title">Хочу <br> тренироваться</div>
-				<div class="club-form__subtitle">В клубе "Профессионал"</div>
 
-				<form id="form">
-					<input required type="email" placeholder="EMAIL">
-					<input required type="text" placeholder="ИМЯ">
-					<input required type="tel" placeholder="ТЕЛЕФОН">
-					<button class="join join-form" type="submit">Вступить в клуб</button>
-				</form>	
-			<p class="info">Вся информация, размещённая на настоящем сайте, носит информационный характер и ни при каких обстоятельствах не
-				является публичной офертой, определяемой положениями статьи 437 Гражданского кодекса Российской Федерации.</p>
+
+	<div class="section" id="section3">
+		<section class="contacts">
+			<div class="container">
+				<div class="contacts-wrapper">
+					<div class="contacts-address">Ростов-на-Дону, <br> ул. Суворова, 130</div>
+					<div class="contacts-worktime__wrapper">
+						<div class="worktime-title">С понедельника по пятницу:</div>
+						<div class="worktime-time">6:30 — 00:30</div>
+						<div class="worktime-title swing">В выходные и праздники:</div>
+						<div class="worktime-time">8:00 — 22:00</div>
+						<button class="btn join join-white join-contacts">Вступить в клуб</button>
+					</div>
+					<div class="contacts-social__wrapper">
+						<div class="social-instagram">
+							<a href="#inst"><img src="./img/instagram.png" alt="Instagram"><span>Instagram</span></a>
+
+						</div>
+						<div class="social-map">
+							<a
+								href="https://maps.google.com?saddr=Current+Location&daddr=47 16.391437877460078,39 43.134642924831326"><img
+									src="./img/map.png" alt="Map"><span>Проложить маршрут</span></a>
+
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="footer-img">
-				<img src="./img/woman2.png" alt="woman2">
+		</section>
+	</div>
+
+
+	<div class="section" id="section4">
+		<footer>
+			<div class="container">
+				<div class="club-form">
+					<div class="club-form__title">Хочу <br> тренироваться</div>
+					<div class="club-form__subtitle">В клубе "Профессионал"</div>
+
+					<form id="form">
+						<input required type="email" placeholder="EMAIL">
+						<input required type="text" placeholder="ИМЯ">
+						<input required type="tel" id="phone" placeholder="ТЕЛЕФОН">
+						<button class="join join-form" type="submit">Вступить в клуб</button>
+					</form>
+					<p class="info">Вся информация, размещённая на настоящем сайте, носит информационный характер и ни при
+						каких обстоятельствах не
+						является публичной офертой, определяемой положениями статьи 437 Гражданского кодекса Российской
+						Федерации.</p>
+				</div>
+				<div class="footer-img">
+					<img src="./img/woman2.png" alt="woman2">
+				</div>
 			</div>
-	
-			
-		</div>
-	</footer>
+		</footer>
+	</div>
+
 
 
 	<div class="overlay fade">
@@ -176,12 +231,21 @@
 				<form id="form">
 					<input required type="email" placeholder="EMAIL">
 					<input required type="text" placeholder="ИМЯ">
-					<input required type="tel" placeholder="ТЕЛЕФОН">
+					<input required type="tel" id="tel" placeholder="ТЕЛЕФОН">
 					<button class="join join-form" type="submit">Вступить в клуб</button>
 				</form>
 			</div>
 		</div>
 	</div>
+</div>	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/fotorama.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/fullpage.js"></script>
+	<script src="js/scrolloverflow.min.js"></script>
+
+	
 </body>
 </html>

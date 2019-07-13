@@ -1,0 +1,27 @@
+.gallery {
+  margin-top: 119px; }
+
+.fotorama {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.fotorama .fotorama__arr--prev {
+  background: url(../img/prev.png) no-repeat;
+  opacity: 0.6; }
+
+.fotorama .fotorama__arr--next {
+  background: url(../img/next.png) no-repeat;
+  opacity: 0.6; }
+
+.fotorama .fotorama__arr--prev:hover,
+.fotorama .fotorama__arr--next:hover {
+  opacity: 1; }
+
+.fotorama .fotorama__thumb-border {
+  border-color: #F15A29; }
