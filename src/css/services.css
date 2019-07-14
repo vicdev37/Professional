@@ -115,7 +115,7 @@
   background: url(../img/slide6.png);
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
-  z-index: 0; }
+  z-index: 1; }
 
 .a-item::after {
   content: "";

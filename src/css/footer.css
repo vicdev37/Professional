@@ -4,8 +4,8 @@ footer {
 
 .club-form {
   max-width: 319px;
-  padding-top: 145px;
-  padding-bottom: 153px;
+  padding-top: 100px;
+  padding-bottom: 39px;
   margin-left: 211px; }
 
 .club-form__title {
@@ -83,19 +83,19 @@ input::placeholder {
   width: 100%; }
 
 .info {
-  margin-top: 32px;
+  margin-top: 16px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 21px;
+  line-height: 17px;
   color: #FFFFFF; }
 
 .footer-img {
-  height: 830px;
+  height: 700px;
   position: absolute;
-  top: 115px;
-  right: 109px; }
+  top: 50px;
+  right: 160px; }
 
 .footer-img img {
   height: 100%; }

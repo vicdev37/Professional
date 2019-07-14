@@ -8,7 +8,8 @@ window.addEventListener('DOMContentLoaded', function () {
 		anchors: ['home', 'services', 'gallery', 'contacts', 'inClub'],
 		// menu: '#menu',
 		scrollBar: true,
-		// scrollOverflow: true
+		// scrollOverflow: true, 
+		// autoScrolling: false,
 		navigation: true,
 		// loopBottom: true
 	});
@@ -80,7 +81,21 @@ window.addEventListener('scroll', function () {
 		navbar.classList.remove('another');
 		logo.classList.remove('another-logo');
 	}
+});
+
+logo.addEventListener('click', function () {
+	logo.classList.remove('another-logo');
 })
+
+
+let $page = $('html, body');
+$('a[href*="#"]').click(function () {
+	$page.animate({
+		scrollTop: $($.attr(this, 'href')).offset().top
+	}, 700);
+	return false;
+});
+
 
 // services 
 
