@@ -2,23 +2,84 @@
   margin-top: 25px;
   // height: 100vh;
 }
+// .fotorama-wrapper {
+//   max-width: 3500px;
+//   width: 100%;
+// }
+
 .fotorama {
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  // justify-content: center;
+  margin-left: 430px;
   margin-top: 30px;
 }
 
+// .fotorama .fotorama__loaded--img {}
+
+.fotorama .fotorama__stage__frame {
+  //  margin-left: 30px;
+}
+
+.fotorama .fotorama__stage__frame
+// .fotorama .fotorama__loaded
+// .fotorama .fotorama__loaded--img 
+{
+  left: -20px;
+}
+
+.fotorama .fotorama-img {
+  left: 10%;
+}
+
+.fotorama .fotorama__nav.fotorama__shadows--right:after,
+.fotorama .fotorama__stage.fotorama__shadows--right:after {
+  display: none;
+}
+
+.fotorama .fotorama__nav:after,
+.fotorama .fotorama__stage:after {
+  display: none;
+}
+
+// .fotorama__img {
+//   width: 150px;
+//   height: 150px;
+// }
+
+.fotorama .fotorama__stage {
+  overflow: visible;
+}
+
+.fotorama .fotorama__arr,
+.fotorama .fotorama__fullscreen-icon,
+.fotorama .fotorama__nav,
+.fotorama .fotorama__nav__frame,
+.fotorama .fotorama__nav__shaft
+// .fotorama__stage__frame,
+// .fotorama__stage__shaft,
+// .fotorama__video-close,
+// .fotorama__video-play 
+{
+  overflow: visible;
+ 
+}
+
+// .fotorama .fotorama__stage__frame{
+//   opacity: 0.3;
+// }
 .fotorama .fotorama__arr--prev {
   
   background: url(../img/prev.png) no-repeat;
-  opacity: 0.6;
+  opacity: 0.3;
   
 }
 
 .fotorama .fotorama__arr--next {
 
   background: url(../img/next.png) no-repeat;
-  opacity: 0.6;
+  opacity: 0.3;
+  right: -138px;
 
 }
 
@@ -26,44 +87,9 @@
 .fotorama .fotorama__arr--next:hover {
   opacity: 1;
 }
-// .fotorama .fotorama__arr--next {
-//   content: '';
-//   display: block;
-//   width: 60px;
-//   height: 60px;
-//   border-radius: 50%;
-//   border: 1px solid black;
-  
-  
-// }
-// .fotorama .fotorama__arr--next:after {
-//   // background: url(../img/next.png) no-repeat;
-//   content: '';
-//   position: absolute;
-//   top: 50%;
-//   right: 26%;
-//   display: block;
-//   width: 34px;
-//   height: 1px;
-//   background-color: black;
-  
-// }
 
-// .fotorama .fotorama__arr--next:before {
-//   content: '';
-//   position: absolute;
-//   display: block;
-//   top: 24px;
-//   left: 25px;
-//   transform: rotate(32deg);
-//   width: 20px;
-//   height: 1px;
-//   background-color: black;
-// } 
 
-// .fotorama .fotorama__arr--next:hover {
-//   background-color: #F15A29;
-// }
+
 
 .fotorama .fotorama__thumb-border {
   border-color: #F15A29;

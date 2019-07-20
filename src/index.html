@@ -8,31 +8,36 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=cyrillic-ext" rel="stylesheet">
 	<link href="css/fotorama.css" type="text/css" rel="stylesheet">
 	<link href="css/fullpage.css" type="text/css" rel="stylesheet">
+	<link href="css/panorama_viewer.css" type="text/css" rel="stylesheet">
 	<title>Professional</title>
 </head>
 <body>
+<nav class="main-nav" id="main-nav">
+	<div class="logo logo-first">
+		<a href="#logo"></a>
+	</div>
+	<a href="#" class="menu-btn">
+		<span></span>
+	</a>
+	<ul id="menu" class="main-nav__ul another-white">
+		<li data-menuanchor="home" class="main-nav__li"><a href="#home">Главная</a></li>
+		<li data-menuanchor="services" class="main-nav__li"><a href="#services">Услуги</a></li>
+		<li data-menuanchor="gallery" class="main-nav__li"><a href="#gallery">Галерея</a></li>
+		<li data-menuanchor="contacts" class="main-nav__li"><a href="#contacts">Контакты</a></li>
+		<li data-menuanchor="inClub" class="main-nav__li"><a href="#inClub">Вступить в клуб</a></li>
+		<li class="main-nav__li righted"><a href="tel: 8 800 655 35 35">8 800 655
+				35 35</a>
+		</li>
+	</ul>
+</nav>
 <div id="fullpage">
 	<div class="section" id="section1">
-		<section class="main">
+		<section class="main" id="logo">
 			<div class="container">
-				<header id="logo">
-					<nav class="main-nav" id="main-nav">
-						<div class="logo logo-first">
-							<a href="#logo"></a>
-						</div>
-						<ul id="menu" class="main-nav__ul">
-							<li data-menuanchor="home" class="main-nav__li"><a href="#home">Главная</a></li>
-							<li data-menuanchor="services" class="main-nav__li"><a href="#services">Услуги</a></li>
-							<li data-menuanchor="gallery" class="main-nav__li"><a href="#gallery">Галерея</a></li>
-							<li data-menuanchor="contacts" class="main-nav__li"><a href="#contacts">Контакты</a></li>
-							<li data-menuanchor="inClub" class="main-nav__li"><a href="#inClub">Вступить в клуб</a></li>
-							<li class="main-nav__li righted"><a href="tel: 8 800 655 35 35">8 800 655
-									35 35</a>
-							</li>
-						</ul>
-					</nav>
+				
+					
 
-					<div class="main-content">
+					<div class="main-content" >
 						<div class="main-content__left">
 							<div class="main-title">
 								Фитнес-центр
@@ -54,58 +59,40 @@
 						<div class="dot"></div>
 					</div> -->
 
-				</header>
+			
 			</div>
 		</section>
 	</div>
 
 	<div class="section" id="section2">
-		
 		<section class="services">
+			
 			<div class="container">
-				<!-- <nav class="main-nav another">
-					<div class="logo">
-						<a href="#logo"><img src="./img/logo_orange.png" alt="logo"></a>
-					</div>
-					<ul id="menu" class="main-nav__ul">
-						<li data-menuanchor="home" class="main-nav__li"><a href="#home">Главная</a></li>
-						<li data-menuanchor="services" class="main-nav__li"><a href="#services">Услуги</a></li>
-						<li data-menuanchor="gallery" class="main-nav__li"><a href="#gallery">Галерея</a></li>
-						<li data-menuanchor="contacts" class="main-nav__li"><a href="#contacts">Контакты</a></li>
-						<li data-menuanchor="inClub" class="main-nav__li"><a href="#inClub">Вступить в клуб</a></li>
-						<li class="main-nav__li righted"><a href="tel: 8 800 655 35 35">8 800 655
-								35 35</a>
-						</li>
-					</ul>
-				</nav> -->
+		
 				<div class="services-wrapper">
-
 					<div class="services-left">
 						<div class="services-left__groups">
-
 							<div class="groups-title__up">Групповые</div>
 							<div class="groups-nav">
 								<ul class="groups-ul">
-									<li class="services-li"><a href="#body-pump">body pump</a></li>
-									<li class="services-li"><a href="#cxworx">cxworx</a></li>
-									<li class="services-li"><a href="#body-balance">body balance</a></li>
-									<li class="services-li"><a href="#rpm">rpm</a></li>
+									<li class="services-li services-li__body-pump"><a href="#body-pump">body pump</a></li>
+									<li class="services-li services-li__cxworx"><a href="#cxworx">cxworx</a></li>
+									<li class="services-li services-li__body-balance"><a href="#body-balance">body balance</a></li>
+									<li class="services-li services-li__rpm"><a href="#rpm">rpm</a></li>
 								</ul>
 							</div>
-
 							<div class="gym-title__down">Зал</div>
 							<div class="gym-nav">
 								<ul class="gym-ul">
-									<li class="services-li"><a href="#trening">Персональный тренинг</a></li>
-									<li class="services-li"><a href="#power">Силовые тренажеры</a></li>
-									<li class="services-li"><a href="#kardiozone">Кардиозона</a></li>
-									<li class="services-li"><a href="#kinesis">Kinesis</a></li>
-									<li class="services-li"><a href="#flexability">Flexability</a></li>
+									<li class="services-li services-li__trening"><a href="#trening">Персональный тренинг</a></li>
+									<li class="services-li services-li__power"><a href="#power">Силовые тренажеры</a></li>
+									<li class="services-li services-li__kardiozone"><a href="#kardiozone">Кардиозона</a></li>
+									<li class="services-li services-li__kinesis"><a href="#kinesis">Kinesis</a></li>
+									<li class="services-li services-li__flexability"><a href="#flexability">Flexability</a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-
 					<div class="services-right">
 						<div class="main-items">
 							<div class="item">
@@ -124,33 +111,104 @@
 								<div class="item-subtitle">Безупречная биомеханика, естественная <br> траектория и амплитуда
 									движения</div>
 							</div>
-							<button class="btn join join-white">Вступить в клуб</button>
-							<button class="excursion">Экскурсия</button>
+							<button class="btn join join-white join-services">Вступить в клуб</button>
+							<button class="excursion excursion-main excursion-services">Экскурсия</button>
 						</div>
-						<div class="a-item__wrapper">
-							<div class="a-item power">
-								<div class="a-team__arrow">
-									<img src="./img/prev.png" alt="Image">
-								</div>
-								<div class="a-item__title">Силовые Тренажеры</div>
-								<p class="a-item__description">
-									«Профессионал» оснащен силовыми тренажерами от лидера мирового рынка - Tehnogym (Италия).
-									Это новое поколение
-									профессиональных тренажеров, разработанных на основе изучения требований и пожеланий к
-									оборудованию более 10
-									миллионов пользователей в различных странах мира. В основу разработки заложены простота
-									регулировки и
-									использования; естественная траектория движений, максимально приближенная к траектории
-									тренировки со свободным
-									весом; комфорт, надежность и безопасность конструкции при минимальных габаритах.
-								</p>
-								<button class="btn join join-white">Вступить в клуб</button>
-								<button class="excursion">Экскурсия</button>
-							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+
+				<div class="a-item__wrapper a-item__wrapper-trening">
+					<div class="a-item power">
+						<div class="a-team__arrow">
+							<img src="./img/next.png" alt="Image">
+						</div>
+						<div class="a-item__title">Персональный Тренинг</div>
+						<p class="a-item__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Deleniti nulla corporis voluptatum maxime nihil, enim, officia,
+							pariatur voluptatibus facilis commodi rem quaerat adipisci quam
+							dicta quibusdam porro repellat unde debitis.
+						</p>
+						<button class="btn join join-white join-items">Вступить в клуб</button>
+						<button class="excursion excursion-main join-items">Экскурсия</button>
+					</div>
+				</div>
+
+				<div class="a-item__wrapper a-item__wrapper-power">
+					<div class="a-item power">
+						<div class="a-team__arrow">
+							<img src="./img/next.png" alt="Image">
+						</div>
+						<div class="a-item__title">Силовые Тренажеры</div>
+						<p class="a-item__description">
+							«Профессионал» оснащен силовыми тренажерами от лидера мирового рынка - Tehnogym (Италия).
+							Это новое поколение
+							профессиональных тренажеров, разработанных на основе изучения требований и пожеланий к
+							оборудованию более 10
+							миллионов пользователей в различных странах мира. В основу разработки заложены простота
+							регулировки и
+							использования; естественная траектория движений, максимально приближенная к траектории
+							тренировки со свободным
+							весом; комфорт, надежность и безопасность конструкции при минимальных габаритах.
+						</p>
+						<button class="btn join join-white join-items">Вступить в клуб</button>
+						<button class="excursion excursion-gyms join-items">Экскурсия</button>
+					</div>
+				</div>
+
+				<div class="a-item__wrapper a-item__wrapper-kardiozone">
+					<div class="a-item power">
+						<div class="a-team__arrow">
+							<img src="./img/next.png" alt="Image">
+						</div>
+						<div class="a-item__title">Кардиозона</div>
+						<p class="a-item__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Deleniti nulla corporis voluptatum maxime nihil, enim, officia, 
+							pariatur voluptatibus facilis commodi rem quaerat adipisci quam
+							dicta quibusdam porro repellat unde debitis.
+						</p>
+						<button class="btn join join-white join-items">Вступить в клуб</button>
+						<button class="excursion join-items">Экскурсия</button>
+					</div>
+				</div>
+
+				<div class="a-item__wrapper a-item__wrapper-kinesis">
+					<div class="a-item power">
+						<div class="a-team__arrow">
+							<img src="./img/next.png" alt="Image">
+						</div>
+						<div class="a-item__title">Кинезис</div>
+						<p class="a-item__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Deleniti nulla corporis voluptatum maxime nihil, enim, officia,
+							pariatur voluptatibus facilis commodi rem quaerat adipisci quam
+							dicta quibusdam porro repellat unde debitis.
+						</p>
+						<button class="btn join join-white join-items">Вступить в клуб</button>
+						<button class="excursion join-items">Экскурсия</button>
+					</div>
+				</div>
+				
+				<div class="a-item__wrapper a-item__wrapper-flexability">
+					<div class="a-item power">
+						<div class="a-team__arrow">
+							<img src="./img/next.png" alt="Image">
+						</div>
+						<div class="a-item__title">flexability</div>
+						<p class="a-item__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Deleniti nulla corporis voluptatum maxime nihil, enim, officia,
+							pariatur voluptatibus facilis commodi rem quaerat adipisci quam
+							dicta quibusdam porro repellat unde debitis.
+						</p>
+						<button class="btn join join-white join-items">Вступить в клуб</button>
+						<button class="excursion join-items">Экскурсия</button>
+					</div>
+				</div>
+
+			
 		</section>
 	</div>
 
@@ -159,36 +217,30 @@
 		
 		<section class="gallery">
 			<div class="container">
-				<!-- <nav class="main-nav another">
-					<div class="logo">
-						<a href="#logo"><img src="./img/logo_orange.png" alt="logo"></a>
+				<div class="gallery-nav"></div>
+				<div class="fotorama-wrapper">
+					<div id="fotorama" data-width="50%" data-nav="thumbs" data-thumbwidth="120" data-transition="slide"
+						data-loop="true" data-keyboard="true" data-arrows="true"  data-thumbmargin="30">
+						<img class="fotorama__img" src="./img/1.jpg">
+						<img class="fotorama__img" src="./img/2.jpg">
+						<img class="fotorama__img" src="./img/3.jpg">
+						<img class="fotorama__img" src="./img/4.jpg">
+						<img class="fotorama__img" src="./img/5.jpg">
+						<img class="fotorama__img" src="./img/6.jpg">
+						<img class="fotorama__img" src="./img/7.jpg">
+						<img class="fotorama__img" src="./img/8.jpg">
+						<img class="fotorama__img" src="./img/9.jpg">
+						<img class="fotorama__img" src="./img/10.jpg">
+						<img class="fotorama__img" src="./img/11.jpg">
+						<img class="fotorama__img" src="./img/12.jpg">
+						<img class="fotorama__img" src="./img/13.jpg">
+						<img class="fotorama__img" src="./img/14.jpg">
+						<img class="fotorama__img" src="./img/15.jpg">
 					</div>
-					<ul id="menu" class="main-nav__ul">
-						<li data-menuanchor="home" class="main-nav__li"><a href="#home">Главная</a></li>
-						<li data-menuanchor="services" class="main-nav__li"><a href="#services">Услуги</a></li>
-						<li data-menuanchor="gallery" class="main-nav__li"><a href="#gallery">Галерея</a></li>
-						<li data-menuanchor="contacts" class="main-nav__li"><a href="#contacts">Контакты</a></li>
-						<li data-menuanchor="inClub" class="main-nav__li"><a href="#inClub">Вступить в клуб</a></li>
-						<li class="main-nav__li righted"><a href="tel: 8 800 655 35 35">8 800 655
-								35 35</a>
-						</li>
-					</ul>
-				</nav> -->
-				<div id="fotorama" data-width="50%" data-nav="thumbs" data-thumbwidth="120" data-transition="slide"
-					data-loop="true" data-keyboard="true" data-arrows="true" data-autoplay="true" data-thumbmargin="30">
-					<img src="./img/1.jpg">
-					<img src="./img/2.jpg">
-					<img src="./img/3.jpg">
-					<img src="./img/1.jpg">
-					<img src="./img/2.jpg">
-					<img src="./img/3.jpg">
-					<img src="./img/1.jpg">
-					<img src="./img/2.jpg">
-					<img src="./img/3.jpg">
-				</div>
-				<div class="arrow-wrapper">
-					<div class="arrow-prev"></div>
-					<div class="arrow-next"></div>
+					<div class="arrow-wrapper">
+						<div class="arrow-prev"></div>
+						<div class="arrow-next"></div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -245,39 +297,31 @@
 
 
 	<div class="section" id="section5">
-		
+
 		<div class="container">
 			<footer>
-				<!-- <nav class="main-nav">
-					<div class="logo">
-						<a href="#logo"><img src="./img/logo.png" alt="logo"></a>
-					</div>
-					<ul id="menu" class="main-nav__ul">
-							<li data-menuanchor="home" class="main-nav__li"><a href="#home">Главная</a></li>
-							<li data-menuanchor="services" class="main-nav__li"><a href="#services">Услуги</a></li>
-							<li data-menuanchor="gallery" class="main-nav__li"><a href="#gallery">Галерея</a></li>
-							<li data-menuanchor="contacts" class="main-nav__li"><a href="#contacts">Контакты</a></li>
-							<li data-menuanchor="inClub" class="main-nav__li"><a href="#inClub">Вступить в клуб</a></li>
-							<li class="main-nav__li righted"><a href="tel: 8 800 655 35 35">8 800 655
-									35 35</a>
-							</li>
-						</ul>
-				</nav> -->
 				<div class="club-form">
-				<div class="club-form__title">Хочу <br> тренироваться</div>
-				<div class="club-form__subtitle">В клубе "Профессионал"</div>
+					<div class="club-form__title">Хочу <br> тренироваться</div>
+					<div class="club-form__subtitle">В клубе "Профессионал"</div>
 
-				<form id="form">
-					<input required type="email" placeholder="EMAIL">
-					<input required type="text" placeholder="ИМЯ">
-					<input required type="tel" id="phone" placeholder="ТЕЛЕФОН">
-					<button class="join join-form" type="submit">Вступить в клуб</button>
-				</form>
-				<p class="info">Вся информация, размещённая на настоящем сайте, носит информационный характер и ни при
-					каких обстоятельствах не
-					является публичной офертой, определяемой положениями статьи 437 Гражданского кодекса Российской
-					Федерации.</p>
-				</div>
+					<form id="form" class="main-form">
+
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Professional">
+						<input type="hidden" name="admin_email" value="justicejesus1237@gmail.com">
+						<input type="hidden" name="form_subject" value="Оставлена заявка на сайте">
+						<!-- END Hidden Required Fields -->
+
+						<input required type="text" name="email" placeholder="EMAIL">
+						<input required type="text" name="name" placeholder="ИМЯ">
+						<input required type="text" id="tel" name="tel" placeholder="ТЕЛЕФОН">
+						<button class="join join-form" type="submit">Вступить в клуб</button>
+					</form>
+					<p class="info">Вся информация, размещённая на настоящем сайте, носит информационный характер и ни при
+						каких обстоятельствах не
+						является публичной офертой, определяемой положениями статьи 437 Гражданского кодекса Российской
+						Федерации.</p>
+					</div>
 				<div class="footer-img">
 					<img src="./img/woman2.png" alt="woman2">
 				</div>
@@ -298,14 +342,44 @@
 			</div>
 			<div class="popup-form">
 				<form id="form">
-					<input required type="email" placeholder="EMAIL">
-					<input required type="text" placeholder="ИМЯ">
-					<input required type="tel" id="tel" placeholder="ТЕЛЕФОН">
+
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Professional">
+					<input type="hidden" name="admin_email" value="justicejesus1237@gmail.com">
+					<input type="hidden" name="form_subject" value="Оставлена заявка на сайте">
+					<!-- END Hidden Required Fields -->
+
+					<input required type="text" name="email" placeholder="EMAIL">
+					<input required type="text" name="name" placeholder="ИМЯ">
+					<input required type="text" id="tel" name="tel" placeholder="ТЕЛЕФОН">
 					<button class="join join-form" type="submit">Вступить в клуб</button>
 				</form>
 			</div>
+			
 		</div>
 	</div>
+	<div class="panorama-main pano">
+		<div class="panorama-close">&times;</div>
+	</div>
+	<div class="panorama-gyms pano">
+		<div class="panorama-close">&times;</div>
+	</div>
+		
+	<!-- <div class="panorama-wrapper">
+		<div class="panorama">
+			<img src="./img/pano1.jpg">
+		</div>
+
+		<div class="panorama">
+			<img src="./img/pano2.jpg">
+		</div>
+
+		<div class="panorama">
+			<img src="./img/pano3.jpg">
+		</div>
+	</div> -->
+		
+
 </div>	
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -314,6 +388,8 @@
 	<script src="js/script.js"></script>
 	<script src="js/fullpage.js"></script>
 	<script src="js/scrolloverflow.min.js"></script>
+	<!-- <script src="js/jquery.panorama_viewer.js"></script> -->
+	<script src="js/jquery.cyclotron.js"></script>
 
 	
 </body>

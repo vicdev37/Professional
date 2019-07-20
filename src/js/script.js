@@ -6,20 +6,36 @@ window.addEventListener('DOMContentLoaded', function () {
 	$("#fullpage").fullpage({
 		// sectionsColor: ['#C63D0F', 'red', 'red', 'red', '#C63D0F'],
 		anchors: ['home', 'services', 'gallery', 'contacts', 'inClub'],
-		// menu: '#menu',
-		scrollBar: true,
-		// scrollOverflow: true, 
-		// autoScrolling: false,
+		menu: '#menu',
+		// scrollBar: true,
+		// scrollOverflow: true,
+		// scrollBar: false,
+		autoScrolling: false,
 		navigation: true,
+		
 		// loopBottom: true
+		
+		onLeave: function (link, index) {
+			console.log('index', index)
+			if (index.anchor == 'services' || index.anchor == 'gallery' || index.anchor == 'contacts') {
+				$(".logo").addClass("another-logo");
+				$("#menu, .main-nav__ul").addClass("another");
+			} else {
+				$(".logo").removeClass("another-logo").css({
+					
+				});
+				$("#menu, .main-nav__ul").removeClass("another");
+			}
+		},
 	});
+
 
 // modal
 
 	let btn = document.querySelectorAll('.btn'),
 		overlay = document.querySelector('.overlay'),
 		close = document.querySelector('.popup-close');
-		// descrBtn = document.querySelectorAll('.description-btn');
+		
 
 	btn.forEach(el => {
 		el.addEventListener('click', function () {
@@ -31,96 +47,98 @@ window.addEventListener('DOMContentLoaded', function () {
 	close.addEventListener('click', function () {
 		overlay.style.display = 'none';
 		this.classList.remove('more-splash');
-		document.body.style.overflow = '';
+		document.body.style.overflow = 'auto';
 		});
 	});
 
-// menu 
-
-// let scrolled;
-// window.onscroll = function () {
-// 	scrolled = window.pageYOffset || document.documentElement.scrollTop;
-// 	if (scrolled > 400) {
-// 		$(".main-nav__ul").css({
-// 			"color": "black"
-// 		})
-// 	}
-// 	if (400 > scrolled) {
-// 		$(".main-nav__ul").css({
-// 			"color": "white"
-// 		});
-// 	}
-
-// };
-
-const navbar = document.querySelector('#menu'),
-	  section1 = document.getElementById('section1'),
-	  section2 = document.getElementById('section2'),
-	  section3 = document.getElementById('section3'),
-	  section4 = document.getElementById('section4'),
-	  section5 = document.getElementById('section5'),
-	  logo = document.querySelector('.logo'); 
-
-window.addEventListener('scroll', function () {
-	const lastPosition = window.scrollY
-	if (lastPosition > 700) {
-		navbar.classList.add('another');
+// menu
+	$('.menu-btn').on('click', function (e) {
+		e.preventDefault();
+		$(this).toggleClass('menu-btn_active');
+		$('.main-nav__ul').toggleClass('menu_active');
 		
-		logo.classList.add('another-logo');
+
+	});
+
+	$(".main-nav__li").click(function () {
+		$(".menu-btn").toggleClass('menu-btn_active');
+		$(".main-nav__ul").toggleClass('menu_active');
+	});
+
+	
+	
+// плавный скролл
+
+	// let $page = $('html, body');
+	// 	$('a[href*="#"]').click(function () {
+	// 		$page.animate({
+	// 			scrollTop: $($.attr(this, 'href')).offset().top
+	// 		}, 700);
+	// 		return false;
+	// });
 
 
-	} else if (navbar.classList.contains('another')) {
-		navbar.classList.remove('another');
-		
-	} else {
-		navbar.classList.remove('another');
-		logo.classList.remove('another-logo');
-	}
-
-	if (window.pageYOffset > 2850) {
-		navbar.classList.remove('another');
-		logo.classList.remove('another-logo');
-	}
-});
-
-logo.addEventListener('click', function () {
-	logo.classList.remove('another-logo');
-})
-
-
-let $page = $('html, body');
-$('a[href*="#"]').click(function () {
-	$page.animate({
-		scrollTop: $($.attr(this, 'href')).offset().top
-	}, 700);
-	return false;
-});
-
-
-// services 
-
+// services 	
 	let link = document.querySelectorAll('.services-li'),
-		itemWrapper = document.querySelector('.a-item__wrapper'),
-		servicesArrow = document.querySelector('.a-team__arrow');
+		linkTrening = document.querySelector('.services-li__trening'),
+		linkPower = document.querySelector('.services-li__power'),
+		linkKardiozone = document.querySelector('.services-li__kardiozone'),
+		linkKinesis = document.querySelector('.services-li__kinesis'),
+		linkFlexability = document.querySelector('.services-li__flexability'),
+		itemWrapperPower = document.querySelector('.a-item__wrapper-power'),
+		itemWrapperTrening = document.querySelector('.a-item__wrapper-trening'),
+		itemWrapperKardiozone = document.querySelector('.a-item__wrapper-kardiozone'),
+		itemWrapperKinesis = document.querySelector('.a-item__wrapper-kinesis'),
+		itemWrapperFlexability = document.querySelector('.a-item__wrapper-flexability'),
+		itemWrapper = document.querySelectorAll('.a-item__wrapper'),
+		servicesArrow = document.querySelectorAll('.a-team__arrow');
 
 
-	link.forEach(elem => {
-		elem.addEventListener('click', function () {
-			itemWrapper.style.display = 'block';
-			itemWrapper.classList.add('slideLeft');
-			});
-		});
-		servicesArrow.addEventListener('click', function () {
-			itemWrapper.style.display = 'none';
-			itemWrapper.classList.remove('slideLeft');
-			
+	// link.forEach(elem => {
+	// 	elem.addEventListener('click', function () {
+	// 		itemWrapperTening.classList.add('slideLeft');
+	// 	});
+	// });
+
+	linkTrening.addEventListener('click', function () {
+		itemWrapperTrening.classList.add('slideLeft');
 	});
+
+	linkPower.addEventListener('click', function () {
+		itemWrapperPower.classList.add('slideLeft');
+	});
+
+	linkKardiozone.addEventListener('click', function () {
+		itemWrapperKardiozone.classList.add('slideLeft');
+	});
+
+	linkKinesis.addEventListener('click', function () {
+		itemWrapperKinesis.classList.add('slideLeft');
+	});
+
+	linkFlexability.addEventListener('click', function () {
+		itemWrapperFlexability.classList.add('slideLeft');
+	});
+
+	
+
+
+	servicesArrow.forEach(elem => {
+		elem.addEventListener('click', function () {
+			itemWrapper.forEach(item => {
+				item.classList.remove('slideLeft');
+			});
+			
+		});
+	});
+		
+	
 
 // Fotorama
 	$(function () {
 		$('#fotorama').fotorama();
 	});
-});
+
 
 // Mask
 	$(function () {
@@ -136,3 +154,71 @@ $('a[href*="#"]').click(function () {
 		//2. Получить элемент, к которому необходимо добавить маску
 		$("#tel").mask("+7(999) 999-9999");
 	});
+
+
+// form
+	$("form").submit(function () { //Change
+	var th = $(this);
+	$.ajax({
+		type: "POST",
+		url: "mail.php", //Change
+		data: th.serialize()
+	}).done(function () {
+		alert("Спасибо за заявку! Мы с Вами свяжемся");
+	setTimeout(function () {
+			// Done Functions
+			th.trigger("reset");
+		}, 1000);
+	});
+	return false;
+	});
+
+
+// Panorama-init
+
+	$('.panorama-main').cyclotron();
+	$('.panorama-gyms').cyclotron();
+
+
+// Panorama-show
+
+	let excursionBtnMain = document.querySelector('.excursion-main'),
+		excursionBtmGums = document.querySelector('.excursion-gyms'),
+		panoramaOverlayMain = document.querySelector('.panorama-main'),
+		panoramaOverlayGyms = document.querySelector('.panorama-gyms'),
+		pano = document.querySelectorAll('.pano'),
+		panoramaClose = document.querySelectorAll('.panorama-close');
+	
+
+		excursionBtnMain.addEventListener('click', function () {
+			panoramaOverlayMain.style.display = 'block';
+			this.classList.add('more-splash');
+			document.body.style.overflow = 'hidden';
+		});
+
+		excursionBtmGums.addEventListener('click', function () {
+			panoramaOverlayGyms.style.display = 'block';
+			this.classList.add('more-splash');
+			document.body.style.overflow = 'hidden';
+		});
+
+		panoramaClose.forEach(el => {
+			el.addEventListener('click', function () {
+				pano.forEach(it => {
+						it.style.display = 'none';
+						this.classList.remove('more-splash');
+						document.body.style.overflow = 'auto';
+					});
+				
+		});
+	});
+
+	
+
+
+
+});
+
+
+
+

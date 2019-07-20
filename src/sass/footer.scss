@@ -2,14 +2,14 @@
 footer {
   background: #F15A29;
   position: relative;
-
+  // height: 100vh;
 }
 
 .club-form {
   
   max-width: 319px;
-  padding-top: 100px;
-  padding-bottom: 39px;
+  padding-top: 120px;
+  padding-bottom: 220px;
   margin-left: 211px;
 
 }
@@ -79,15 +79,48 @@ input::placeholder {
 
 
 .footer-img { 
-  height: 700px;
+  height: 800px;
   position: absolute;
-  top: 50px;
+  top: 151px;
   right: 160px;
 }
 
 .footer-img img {
   height: 100%;
 }
+
+
+@media (max-width: 1284px) {
+  .club-form {
+    margin-left: 100px;
+  }
+  
+}
+
+@media (max-width: 1024px) {
+  .footer-img {
+    display: none;
+  }
+
+  .club-form {
+    margin: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .club-form__title {
+    font-size: 33px;
+    line-height: 40px;
+    padding-left: 17px;
+  }
+  .club-form__subtitle {
+    padding-left: 17px;
+  }
+}
+
+// @media (max-width: 1024px) {
+
+// }
 
 
 

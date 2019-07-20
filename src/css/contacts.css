@@ -68,3 +68,13 @@
 .social-instagram:hover,
 .social-map:hover {
   color: #F15A29; }
+
+@media (max-width: 767px) {
+  .contacts-wrapper {
+    margin-left: 150px; }
+  .contacts-worktime__wrapper {
+    margin-left: 0; } }
+
+@media (max-width: 576px) {
+  .contacts-wrapper {
+    margin-left: 52px; } }
