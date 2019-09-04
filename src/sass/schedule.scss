@@ -19,6 +19,7 @@
 
 }
 
+
 .training-item {
     min-height: 114px;
 }
@@ -46,6 +47,11 @@
     text-transform: uppercase;
    
 }
+.date-block__day-descr {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
 
 .date-block__date {
     font-family: 'Montserrat', sans-serif;
