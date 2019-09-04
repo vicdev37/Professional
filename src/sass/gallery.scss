@@ -10,27 +10,31 @@
 .fotorama {
   width: 100%;
   display: flex;
-  // justify-content: center;
-  margin-left: 430px;
+  justify-content: center;
+  // margin-left: 430px;
   margin-top: 30px;
+  
 }
+
+
 
 // .fotorama .fotorama__loaded--img {}
 
-.fotorama .fotorama__stage__frame {
-  //  margin-left: 30px;
-}
+// .fotorama .fotorama__stage__frame {
+//   //  margin-left: 30px;
+//   overflow-x: hidden;
+// }
 
-.fotorama .fotorama__stage__frame
-// .fotorama .fotorama__loaded
-// .fotorama .fotorama__loaded--img 
-{
-  left: -20px;
-}
+// .fotorama .fotorama__stage__frame
+// // .fotorama .fotorama__loaded
+// // .fotorama .fotorama__loaded--img 
+// {
+//   left: -20px;
+// }
 
-.fotorama .fotorama-img {
-  left: 10%;
-}
+// .fotorama .fotorama-img {
+//   left: 10%;
+// }
 
 .fotorama .fotorama__nav.fotorama__shadows--right:after,
 .fotorama .fotorama__stage.fotorama__shadows--right:after {
@@ -47,23 +51,23 @@
 //   height: 150px;
 // }
 
-.fotorama .fotorama__stage {
-  overflow: visible;
-}
+// .fotorama .fotorama__stage {
+//   overflow: visible;
+// }
 
-.fotorama .fotorama__arr,
-.fotorama .fotorama__fullscreen-icon,
-.fotorama .fotorama__nav,
-.fotorama .fotorama__nav__frame,
-.fotorama .fotorama__nav__shaft
-// .fotorama__stage__frame,
-// .fotorama__stage__shaft,
-// .fotorama__video-close,
-// .fotorama__video-play 
-{
-  overflow: visible;
+// .fotorama .fotorama__arr,
+// .fotorama .fotorama__fullscreen-icon,
+// .fotorama .fotorama__nav,
+// .fotorama .fotorama__nav__frame,
+// .fotorama .fotorama__nav__shaft
+// // .fotorama__stage__frame,
+// // .fotorama__stage__shaft,
+// // .fotorama__video-close,
+// // .fotorama__video-play 
+// {
+//   overflow: visible;
  
-}
+// }
 
 // .fotorama .fotorama__stage__frame{
 //   opacity: 0.3;
@@ -79,7 +83,7 @@
 
   background: url(../img/next.png) no-repeat;
   opacity: 0.3;
-  right: -138px;
+  // right: -138px;
 
 }
 
@@ -93,5 +97,25 @@
 
 .fotorama .fotorama__thumb-border {
   border-color: #F15A29;
+}
+
+
+
+// @media (max-width: 576px) {
+//   .fotorama {
+//     width: "60%";
+//   } 
+// }
+
+@media (max-width: 446px) {
+  .fotorama {
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 424px) {
+  .fotorama {
+    margin-top: -100px;
+  }
 }
 

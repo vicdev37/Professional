@@ -9,7 +9,7 @@ footer {
   
   max-width: 319px;
   padding-top: 120px;
-  padding-bottom: 220px;
+  padding-bottom: 260px;
   margin-left: 211px;
 
 }
@@ -44,6 +44,7 @@ input {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 3px;
+  color: #FFFFFF;
  
   
 }
@@ -81,7 +82,7 @@ input::placeholder {
 .footer-img { 
   height: 800px;
   position: absolute;
-  top: 151px;
+  top: 160px;
   right: 160px;
 }
 
@@ -107,6 +108,13 @@ input::placeholder {
   }
 }
 
+@media (max-width: 767px) {
+  .club-form {
+    padding-top: 76px;
+    padding-bottom: 60px;
+  }
+}
+
 @media (max-width: 576px) {
   .club-form__title {
     font-size: 33px;
@@ -115,6 +123,16 @@ input::placeholder {
   }
   .club-form__subtitle {
     padding-left: 17px;
+  }
+  .info {
+    padding: 10px;
+  }
+ 
+}
+
+@media (max-width: 424px) {
+  footer {
+    margin-top: -153px;
   }
 }
 

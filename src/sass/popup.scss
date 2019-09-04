@@ -40,7 +40,7 @@
 
 .popup-close {
   position: absolute;
-  right: -17px;
+  right: 0px;
   top: -35px;
   cursor: pointer;
   font-size: 35px;
@@ -50,7 +50,7 @@
 
 .fade {
   animation-name: fade;
-  animation-duration: 2.5s;
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes fade {

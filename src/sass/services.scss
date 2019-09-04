@@ -18,12 +18,13 @@
 }
 
 .services-right {
-	max-width: 867px;
+	width: 867px;
 	width: 100%;
 	// margin-left: 290px;
 }
 
 .main-items {
+	max-width: 411px;
 	margin-left: 167px;
 }
 
@@ -61,7 +62,7 @@
 
 .gym-nav {
 	width: 100%;
-	margin-top: 114px;
+	margin-top: 45px;
 }
 
 .groups-ul a, .gym-ul a {
@@ -124,6 +125,7 @@
 	position: fixed;
 	width: 60%;
 	height: 100%;
+	overflow-y: scroll;
 	display: block;
 	top: 0;
 	right: 0;
@@ -137,11 +139,12 @@
 	position: relative;
 	// max-width: 867px;
 	// width: 100%;
-	height: 100%;
+
 	padding-left: 54px;
 	background: linear-gradient(270deg, rgba(0, 0, 0, 1) 1.75%, rgba(241, 90, 41, 1.8) 97.66%);
+	background-position: 100% 100%;
 	padding-top: 70px;
-	// padding-bottom: 186px;
+	padding-bottom: 86px;
 	// background: url(../img/slide6.png);
 	// background-size: 100% 100%;
 	z-index: 1;
@@ -213,6 +216,10 @@
 	transform: translateX(0%);
 }
 
+.hide {
+	transform: translateX(100%);
+}
+
 // @keyframes slideLeft {
 // 	0% {
 // 		transform: translateX(150%);
@@ -226,6 +233,18 @@
 
 
 @media (max-width: 1024px) {
+	.services-wrapper {
+		flex-direction: column;
+	}
+
+	.services-right {
+		margin-top: 40px;
+	}
+
+	.main-items {
+		margin-left: 0px;
+		
+	}
 	.join-services {
 		margin-top: 28px;
 	}
@@ -235,22 +254,44 @@
 	.excursion-services {
 		margin-top: 28px;
 	}
+	.main-items {
+		margin-left: 83px;
+	}
+}
+
+@media (max-width: 991px) {
+	.a-item {
+		padding-left: 20px;
+		padding-top: 22px;
+	}
 }
 
 
+@media (max-width: 812px) {
+	
+	
+	
+}
+
 @media (max-width: 767px) {
-	.main-items {
-		margin-left: 38px;
-	}
+	
 	.a-item__wrapper {
 		width: 100%;
+	}
+
+	.services-wrapper {
+		margin-left: 85px;
+	}
+
+	.services-left {
+		max-width: 493px;
 	}
 
 }
 
 @media (max-width: 576px) {
 	.services-wrapper {
-		flex-direction: column;
+		
 		margin-left: 17px;
 	}
 	.services-left {
@@ -259,6 +300,15 @@
 	.services-right {
 		margin-top: 63px;
 	}
+
+	.main-items {
+		margin-left: 0px;
+	}
+
+	.item:not(:first-child) {
+		margin-top: 36px;
+	}
+
 	.groups-title__up {
 		left: 13px;
 		font-size: 40px;
@@ -271,6 +321,10 @@
 	.item-title {
 		font-size: 22px;
 		line-height: 30px;
+	}
+
+	.item-subtitle {
+		font-size: 14px;
 	}
 
 	.join-items {
@@ -292,6 +346,16 @@
 	.gym-title__down {
 		left: -13px;
 		font-size: 30px;
+	}
+
+	.a-item__title {
+		font-size: 20px;
+	}
+
+	.a-item__description {
+		font-size: 13px;
+		line-height: 24px;
+		padding-bottom: 40px;
 	}
 	    
 }

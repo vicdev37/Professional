@@ -4,10 +4,724 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=cyrillic-ext" rel="stylesheet">
+	<link href="css/fotorama.css" type="text/css" rel="stylesheet">
+	<link href="css/fullpage.css" type="text/css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png">
 	<title>Professional</title>
 </head>
 <body>
+<nav class="main-nav" id="main-nav">
+	<div class="logo logo-first">
+		<a href="#logo"></a>
+	</div>
+	<a href="#" class="menu-btn">
+		<span></span>
+	</a>
+	<ul id="menu" class="main-nav__ul another-white">
+		<li data-menuanchor="home" class="main-nav__li"><a href="#home">Главная</a></li>
+		<li data-menuanchor="services" class="main-nav__li"><a href="#services">Услуги</a></li>
+		<li data-menuanchor="gallery" class="main-nav__li"><a href="#gallery">Галерея</a></li>
+		<li data-menuanchor="contacts" class="main-nav__li"><a href="#contacts">Контакты</a></li>
+		<li data-menuanchor="schedule" class="main-nav__li"><a href="#schedule">Расписание</a></li>
+		<li data-menuanchor="inClub" class="main-nav__li"><a href="#inClub">Вступить в клуб</a></li>
+		<li class="main-nav__li righted"><a href="tel: 8 863 322 00 90">8 863 322 00 90</a>
+		</li>
+	</ul>
+</nav>
+<div id="fullpage">
+	<div class="section vertical-scrolling" id="section1" data-anchor='home'>
+		<section class="main" id="logo">
+			<div class="container">
+				
+					
+
+					<div class="main-content" >
+						<div class="main-content__left">
+							<div class="main-title">
+								<h2>Фитнес-клуб</h2>
+							</div>
+							<div class="main-name">
+								<h1>Профессионал</h1>
+							</div>
+							<button class="btn join">Вступить в клуб</button>
+						</div>
+						<div class="main-content__right">
+							<img src="./img/woman.png" alt="women">
+						</div>
+					</div>
+
+					<!-- <div class="slider-dots">
+						<div class="dot dot-active"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+					</div> -->
+
+			
+			</div>
+		</section>
+	</div>
+
+	<div class="section vertical-scrolling" id="section2" data-anchor='services'>
+		<section class="services">
+			
+			<div class="container">
+		
+				<div class="services-wrapper">
+					<div class="services-left">
+						<div class="services-left__groups">
+							<div class="groups-title__up">Групповые</div>
+							<div class="groups-nav">
+								<ul class="groups-ul">
+									<li class="services-li services-li__power"><a href="#power">СИЛОВЫЕ</a></li>
+									<li class="services-li services-li__func"><a href="#func">ФУНКЦИОНАЛЬНЫЕ</a></li>
+									<li class="services-li services-li__cardio"><a href="#cardio">КАРДИО-ПРОГРАММЫ</a></li>
+									<li class="services-li services-li__dance"><a href="#dance">ТАНЦЕВАЛЬНЫЕ НАПРАВЛЕНИЯ</a></li>
+									<li class="services-li services-li__yoga"><a href="#yoga">ЙОГА</a></li>
+									
+								</ul>
+							</div>
+							<div class="gym-title__down">Занятия</div>
+							<div class="gym-nav">
+								<ul class="gym-ul">
+									<li class="services-li services-li__treners"><a href="#treners">ТРЕНЕРЫ</a></li>
+									<li class="services-li services-li__news"><a href="#news">НАШИ НОВОСТИ</a></li>
+						
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="services-right">
+						<div class="main-items">
+							<div class="item">
+								<div class="item-title">ТРЕНАЖЕРНЫЙ ЗАЛ</div>
+								<div class="item-subtitle">Большие пространства, высокие потолки, <br> удобное зонирование <br> <b>
+									Сердце любого клуба -тренажерный зал с силовыми и кардиотренажерами ,а так же зонами свободных весов. В нашем
+									клубе для Вас представлено самое современное и высокотехнологическое оборудование .
+								</div>
+							</div>
+						
+							<button class="btn join join-white join-services">Вступить в клуб</button>
+							<!-- <button class="excursion excursion-main excursion-services">Экскурсия</button> -->
+						</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="a-item__wrapper a-item__wrapper-power">
+					<div class="a-item power">
+						<div class="a-team__arrow">
+							<img src="./img/next.png" alt="Image">
+						</div>
+						<div class="a-item__title">СИЛОВЫЕ</div>
+						<p class="a-item__description">
+							<b>Body Pump /ABL /Circular Training</b><br>
+							Подойдут для интенсивных нагрузок.
+						</p>
+						<button class="btn join join-white join-items">Вступить в клуб</button>
+					</div>
+				</div>
+
+				<div class="a-item__wrapper a-item__wrapper-func">
+					<div class="a-item power">
+						<div class="a-team__arrow">
+							<img src="./img/next.png" alt="Image">
+						</div>
+						<div class="a-item__title">ФУНКЦИОНАЛЬНЫЕ</div>
+						<p class="a-item__description">
+							<b>Body Flex/Muscle Toning, Пилатес, Stretching, ЛФК</b><br>
+
+							Новый этап развития фитнеса, предлагающий возможности для Вас тренировки любого уровня подготовки, возраста,
+							физиологических особенностей и самых разнообразных потребностей ( восстановление, реабилитация)
+						</p>
+						<button class="btn join join-white join-items">Вступить в клуб</button>
+					</div>
+				</div>
+
+				<div class="a-item__wrapper a-item__wrapper-cardio">
+					<div class="a-item power">
+						<div class="a-team__arrow">
+							<img src="./img/next.png" alt="Image">
+						</div>
+						<div class="a-item__title">КАРДИО-ПРОГРАММЫ</div>
+						<p class="a-item__description">
+							<b>Степ, Аэробика</b><br>
+
+							Разновидность аэробики,в которой упражнения исполняются при помощи дополнительного специализированного
+							оборудования .
+						</p>
+						<button class="btn join join-white join-items">Вступить в клуб</button>
+					</div>
+				</div>
+
+				<div class="a-item__wrapper a-item__wrapper-dance">
+					<div class="a-item power">
+						<div class="a-team__arrow">
+							<img src="./img/next.png" alt="Image">
+						</div>
+						<div class="a-item__title">ТАНЦЕВАЛЬНЫЕ НАПРАВЛЕНИЯ</div>
+						<p class="a-item__description">
+							<b>ZUMBA, TWERK, REGGETON, DANCEHALL</b><br>
+
+							Кроме регулярных классов, у наших членов клуба есть прекрасная возможность посещать уникальные авторские уроки,
+							эксклюзивные мастер классы от инструкторов-профессионалов, яркие спортивные праздники и соревнования .
+						</p>
+						<button class="btn join join-white join-items">Вступить в клуб</button>
+					</div>
+				</div>
+				
+				<div class="a-item__wrapper a-item__wrapper-yoga">
+					<div class="a-item power">
+						<div class="a-team__arrow">
+							<img src="./img/next.png" alt="Image">
+						</div>
+						<div class="a-item__title">ЙОГА</div>
+						<p class="a-item__description">
+							<b>Древнее индийское учение, созданное для укрепления и оздоровления тела, приобретения равновесия и душевного
+							спокойствия.</b><br>
+
+							Занятия включают в себя:
+							<br><br>
+							1. Асаны (физические упражнения, позы).
+							<br><br>
+							2. Паранаямы (дыхательные упражнения).
+							<br><br>
+							3. Йога-нидра (техника релаксации).
+						</p>
+						<button class="btn join join-white join-items">Вступить в клуб</button>
+					</div>
+				</div>
+
+				<div class="a-item__wrapper a-item__wrapper-treners">
+					<div class="a-item power">
+						<div class="a-team__arrow">
+							<img src="./img/next.png" alt="Image">
+						</div>
+						<div class="a-item__title">ТРЕНЕРЫ</div>
+						<p class="a-item__description">
+							Благодаря тренерам профессионалам Вы сможете не только сбросить лишний вес или набрать мышечную массу, выработать
+							правильную технику, выточить идеальный рельеф, но и стать успешным выступающим спортсменом.
+						</p>
+						<button class="btn join join-white join-items">Вступить в клуб</button>
+					</div>
+				</div>
+
+				<div class="a-item__wrapper a-item__wrapper-news">
+					<div class="a-item power">
+						<div class="a-team__arrow">
+							<img src="./img/next.png" alt="Image">
+						</div>
+						<div class="a-item__title">НАШИ НОВОСТИ</div>
+						<p class="a-item__description">
+							Здесь будут наши новости
+						</p>
+						<button class="btn join join-white join-items">Вступить в клуб</button>
+					</div>
+				</div>
+
+			
+		</section>
+	</div>
+
+
+	<div class="section vertical-scrolling" id="section3" data-anchor='gallery'>
+		
+		<section class="gallery">
+			<div class="container">
+				<div class="gallery-nav"></div>
+				<div class="fotorama-wrapper">
+					<div id="fotorama" data-width="80%" data-nav="thumbs" data-thumbwidth="120" data-transition="slide"
+						data-loop="true" data-keyboard="true" data-arrows="true"  data-thumbmargin="30">
+						<img class="fotorama__img" src="./img/1.jpg">
+						<img class="fotorama__img" src="./img/2.jpg">
+						<img class="fotorama__img" src="./img/3.jpg">
+						<img class="fotorama__img" src="./img/4.jpg">
+						<img class="fotorama__img" src="./img/5.jpg">
+						<img class="fotorama__img" src="./img/6.jpg">
+						<img class="fotorama__img" src="./img/7.jpg">
+						<img class="fotorama__img" src="./img/8.jpg">
+						<img class="fotorama__img" src="./img/9.jpg">
+						<img class="fotorama__img" src="./img/10.jpg">
+						<img class="fotorama__img" src="./img/11.jpg">
+						<img class="fotorama__img" src="./img/12.jpg">
+						<img class="fotorama__img" src="./img/13.jpg">
+						<img class="fotorama__img" src="./img/14.jpg">
+						<img class="fotorama__img" src="./img/15.jpg">
+					</div>
+					<div class="arrow-wrapper">
+						<div class="arrow-prev"></div>
+						<div class="arrow-next"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+
+	<div class="section vertical-scrolling" id="section4" data-anchor='contacts'>
+		
+		<section class="contacts">
+			<div class="container">
+				
+				<!-- <nav class="main-nav another">
+					<div class="logo">
+						<a href="#logo"><img src="./img/logo_orange.png" alt="logo"></a>
+					</div>
+					<ul id="menu" class="main-nav__ul">
+						<li data-menuanchor="home" class="main-nav__li"><a href="#home">Главная</a></li>
+						<li data-menuanchor="services" class="main-nav__li"><a href="#services">Услуги</a></li>
+						<li data-menuanchor="gallery" class="main-nav__li"><a href="#gallery">Галерея</a></li>
+						<li data-menuanchor="contacts" class="main-nav__li"><a href="#contacts">Контакты</a></li>
+						<li data-menuanchor="inClub" class="main-nav__li"><a href="#inClub">Вступить в клуб</a></li>
+						<li class="main-nav__li righted"><a href="tel: 8 800 655 35 35">8 800 655
+								35 35</a>
+						</li>
+					</ul>
+				</nav> -->
+				
+				<div class="contacts-wrapper">
+					<div class="contacts-address">Ростов-на-Дону, <br> ул. Плиева 78/118</div>
+					<div class="contacts-worktime__wrapper">
+						<div class="worktime-time">7:00 — 23:00</div>
+						<div class="worktime-title">ЕЖЕДНЕВНО</div>
+						
+					
+						<button class="btn join join-white join-contacts">Вступить в клуб</button>
+					</div>
+					<div class="contacts-social__wrapper">
+						<div class="social-instagram">
+							<a href="https://www.instagram.com/professional.fit/"><img src="./img/instagram.png" alt="Instagram"><span>Instagram</span></a>
+
+						</div>
+						<div class="social-map">
+							<a
+								href="https://maps.google.com?saddr=Current+Location&daddr=47 16.391437877460078,39 43.134642924831326"><img
+									src="./img/map.png" alt="Map"><span>Проложить маршрут</span></a>
+
+						</div>		
+					</div>
+					<div class="contacts-social__wrapper-down">
+						<div class="social-mail">
+							<a href="mailto:fitness@profi-auto.org"><img src="./img/mail.svg"
+									alt="Mail"><span>fitness@profi-auto.org</span></a>
+						</div>
+						<div class="social-phone">
+							<a href="tel: 8 863 322 00 90"><img src="./img/phone.svg" alt="Phone"><span>8 863 322 00 90</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div class="section vertical-scrolling" id="section6" data-anchor='schedule'>
+		<div class="container">
+			<div class="schedule-wrapper">
+				<div class="schedule-day bcg-orange">
+					<div class="date-block">
+						<div class="date-block__day">ПОНЕДЕЛЬНИК</div>
+						<div class="date-block__date">19/08/2019</div>
+					</div>
+
+					<div class="training-wrapper">
+						<div class="training-item">
+							<div class="training-item__time">7-8</div>
+							<div class="training-item__discipline">ЙОГА<br></div>
+							<div class="training-item__name">Сергей<br>Некрасов</div>
+						</div>	
+						<div class="training-item">
+							<div class="training-item__time">9-00</div>
+							<div class="training-item__discipline">ЛФК<br></div>
+							<div class="training-item__name">Анастасия<br>Генералова</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">10-30</div>
+							<div class="training-item__discipline">BODY<br>FLEX</div>
+							<div class="training-item__name">Анна<br>Клюй</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">11-30</div>
+							<div class="training-item__discipline">Step<br>АЭРОБИКА</div>
+							<div class="training-item__name">Анастасия<br>Генералова</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">19-00</div>
+							<div class="training-item__discipline">ABL<br></div>
+							<div class="training-item__name">Анна<br>Клюй</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">20-00</div>
+							<div class="training-item__discipline">ZUMBA<br></div>
+							<div class="training-item__name">Екатерина<br>Ракачева</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">---</div>
+							<div class="training-item__discipline">---<br></div>
+							<div class="training-item__name">---<br>---</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">---</div>
+							<div class="training-item__discipline">---</div>
+							<div class="training-item__name">---<br>---</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="schedule-day">
+					<div class="date-block">
+						<div class="date-block__day">ВТОРНИК</div>
+						<div class="date-block__date">20/08/2019</div>
+					</div>
+
+					<div class="training-wrapper">
+						<div class="training-item">
+							<div class="training-item__time">---</div>
+							<div class="training-item__discipline">---</div>
+							<div class="training-item__name">---<br>---</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">---</div>
+							<div class="training-item__discipline">---</div>
+							<div class="training-item__name">---<br>---</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">10-30</div>
+							<div class="training-item__discipline">Circular<br>training</div>
+							<div class="training-item__name">Анастасия<br>Генералова</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">18-00</div>
+							<div class="training-item__discipline">Body<br>Pump</div>
+							<div class="training-item__name">Анна<br>Клюй</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">19-00</div>
+							<div class="training-item__discipline">Twerk<br></div>
+							<div class="training-item__name">Екатерина<br>Ракачева</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">20-00</div>
+							<div class="training-item__discipline">Recept<br></div>
+							<div class="training-item__name">Екатерина<br>Ракачева</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">---</div>
+							<div class="training-item__discipline">---</div>
+							<div class="training-item__name">---<br>---</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">---</div>
+							<div class="training-item__discipline">---</div>
+							<div class="training-item__name">---<br>---</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-day bcg-orange">
+					<div class="date-block">
+						<div class="date-block__day">СРЕДА</div>
+						<div class="date-block__date">20/08/2019</div>
+					</div>
+
+					<div class="training-wrapper">
+						<div class="training-item">
+							<div class="training-item__time">7-8</div>
+							<div class="training-item__discipline">ЙОГА<br></div>
+							<div class="training-item__name">Сергей<br>Некрасов</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">---</div>
+							<div class="training-item__discipline">---</div>
+							<div class="training-item__name">---<br>---</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">17-00</div>
+							<div class="training-item__discipline">Muscle<br>toning</div>
+							<div class="training-item__name">Анастасия<br>Генералова</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">18-30</div>
+							<div class="training-item__discipline">ЙОГА<br></div>
+							<div class="training-item__name">Сергей<br>Некрасов</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">20-00</div>
+							<div class="training-item__discipline">Stretching<br></div>
+							<div class="training-item__name">Анна<br>Клюй</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">21-00</div>
+							<div class="training-item__discipline">Dance<br>Hall</div>
+							<div class="training-item__name">Екатерина<br>Ракачева</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">---</div>
+							<div class="training-item__discipline">---</div>
+							<div class="training-item__name">---<br>---</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">---</div>
+							<div class="training-item__discipline">---</div>
+							<div class="training-item__name">---<br>---</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-day">
+					<div class="date-block">
+						<div class="date-block__day">ЧЕТВЕРГ</div>
+						<div class="date-block__date">22/08/2019</div>
+					</div>
+
+					<div class="training-wrapper">
+						<div class="training-item">
+							<div class="training-item__time">12-00</div>
+							<div class="training-item__discipline">Step<br>АЭРОБИКА</div>
+							<div class="training-item__name">Анастасия<br>Генералова</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">---</div>
+							<div class="training-item__discipline">---</div>
+							<div class="training-item__name">---<br>---</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">17-00</div>
+							<div class="training-item__discipline">Muscle<br>toning</div>
+							<div class="training-item__name">Анастасия<br>Генералова</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">18-00</div>
+							<div class="training-item__discipline">ABL<br></div>
+							<div class="training-item__name">Анна<br>Клюй</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">19-00</div>
+							<div class="training-item__discipline">Twerk<br></div>
+							<div class="training-item__name">Екатерина<br>Ракачева</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">20-00</div>
+							<div class="training-item__discipline">Stretching<br></div>
+							<div class="training-item__name">Анна<br>Клюй</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">---</div>
+							<div class="training-item__discipline">---</div>
+							<div class="training-item__name">---<br>---</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">---</div>
+							<div class="training-item__discipline">---</div>
+							<div class="training-item__name">---<br>---</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-day bcg-orange">
+					<div class="date-block">
+						<div class="date-block__day">ПЯТНИЦА</div>
+						<div class="date-block__date">23/08/2019</div>
+					</div>
+
+					<div class="training-wrapper">
+						<div class="training-item">
+							<div class="training-item__time">7-8</div>
+							<div class="training-item__discipline">ЙОГА<br></div>
+							<div class="training-item__name">Сергей<br>Некрасов</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">10-30</div>
+							<div class="training-item__discipline">BODY<br>FLEX</div>
+							<div class="training-item__name">Анна<br>Клюй</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">11-30</div>
+							<div class="training-item__discipline">ЛФК<br></div>
+							<div class="training-item__name">Анастасия<br>Генералова</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">17-00</div>
+							<div class="training-item__discipline">Circular<br>training<br></div>
+							<div class="training-item__name">Анастасия<br>Генералова</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">18-30</div>
+							<div class="training-item__discipline">ЙОГА<br></div>
+							<div class="training-item__name">Сергей<br>Некрасов</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">20-00</div>
+							<div class="training-item__discipline">Stretching<br></div>
+							<div class="training-item__name">Анна<br>Клюй</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">21-00</div>
+							<div class="training-item__discipline">Dance<br>Hall</div>
+							<div class="training-item__name">Екатерина<br>Ракачева</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">---</div>
+							<div class="training-item__discipline">---</div>
+							<div class="training-item__name">---<br>---</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-day">
+					<div class="date-block">
+						<div class="date-block__day">СУББОТА</div>
+						<div class="date-block__date">24/08/2019</div>
+					</div>
+
+					<div class="training-wrapper">
+						<div class="training-item">
+							<div class="training-item__time">8-00</div>
+							<div class="training-item__discipline">90/60/90</div>
+							<div class="training-item__name">Анастасия<br>Генералова</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">12-00</div>
+							<div class="training-item__discipline">ЛФК<br></div>
+							<div class="training-item__name">Анастасия<br>Генералова</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">17-00</div>
+							<div class="training-item__discipline">ZUMBA<br></div>
+							<div class="training-item__name">Екатерина<br>Ракачева</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">18-00</div>
+							<div class="training-item__discipline">ABL<br></div>
+							<div class="training-item__name">Анна<br>Клюй</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">19-00</div>
+							<div class="training-item__discipline">Stretching<br></div>
+							<div class="training-item__name">Анна<br>Клюй</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">20-00</div>
+							<div class="training-item__discipline">Dance<br>Hall</div>
+							<div class="training-item__name">Екатерина<br>Ракачева</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">---</div>
+							<div class="training-item__discipline">---</div>
+							<div class="training-item__name">---<br>---</div>
+						</div>
+						<div class="training-item">
+							<div class="training-item__time">---</div>
+							<div class="training-item__discipline">---</div>
+							<div class="training-item__name">---<br>---</div>
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="section vertical-scrolling" id="section5" data-anchor='inClub'>
+
+		<div class="container">
+			<footer>
+				<div class="club-form">
+					<div class="club-form__title">ЗАПИСАТЬСЯ</div>
+					<div class="club-form__subtitle">на бесплатную пробную тренировку</div>
+
+					<form id="form" class="main-form">
+
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Professional">
+						<input type="hidden" name="admin_email" value="fitness@profi-auto.org">
+						<input type="hidden" name="form_subject" value="Оставлена заявка на сайте Professional">
+						<!-- END Hidden Required Fields -->
+
+						<input required type="text" name="email" placeholder="EMAIL">
+						<input required type="text" name="name" placeholder="ИМЯ">
+						<input required type="text" id="tel" name="tel" placeholder="ТЕЛЕФОН">
+						<button class="join join-form" type="submit">Вступить в клуб</button>
+					</form>
+					<p class="info">Вся информация, размещённая на настоящем сайте, носит информационный характер и ни при
+						каких обстоятельствах не
+						является публичной офертой, определяемой положениями статьи 437 Гражданского кодекса Российской
+						Федерации.</p>
+					</div>
+				
+			</footer>
+			
+		</div>
+
+	</div>
+
 	
-	<h1>ПРИВЕТ</h1>
+
+
+	<div class="overlay fade">
+		<div class="popup">
+			<div class="popup-close">&times;
+			</div>
+			<div class="popup-title">
+				Заполните форму и мы с Вами свяжемся
+			</div>
+			<div class="popup-form">
+				<form id="form">
+
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Professional">
+					<input type="hidden" name="admin_email" value="fitness@profi-auto.org">
+					<input type="hidden" name="form_subject" value="Оставлена заявка на сайте Professional">
+					<!-- END Hidden Required Fields -->
+
+					<input required type="text" name="email" placeholder="EMAIL">
+					<input required type="text" name="name" placeholder="ИМЯ">
+					<input required type="text" id="phone" name="tel" placeholder="ТЕЛЕФОН">
+					<button class="join join-form" type="submit">Вступить в клуб</button>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	<div class="panorama-main pano">
+		<div class="panorama-close">&times;</div>
+	</div>
+	<div class="panorama-gyms pano">
+		<div class="panorama-close">&times;</div>
+	</div>
+		
+	<!-- <div class="panorama-wrapper">
+		<div class="panorama">
+			<img src="./img/pano1.jpg">
+		</div>
+
+		<div class="panorama">
+			<img src="./img/pano2.jpg">
+		</div>
+
+		<div class="panorama">
+			<img src="./img/pano3.jpg">
+		</div>
+	</div> -->
+		
+
+</div>	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/fullpage.js"></script>
+	<script src="js/scrolloverflow.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>	
+	<script src="js/fotorama.js"></script>
+	<script src="js/script.js"></script>
+	
+	
+	
+
+	
 </body>
 </html>
