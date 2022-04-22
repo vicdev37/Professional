@@ -24,7 +24,7 @@
     "imagemin-pngquant": "^6.0.0"
   },
   "dependencies": {
-    "fullpage.js": "^2.9.7"
+    "fullpage.js": "^4.0.5"
   },
   "description": "My second try to create our site",
   "repository": {
